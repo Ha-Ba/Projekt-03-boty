@@ -26,35 +26,27 @@ body {
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     background: #f5f5f5;
-}
+margin: 0 auto;}
 
 h1 {
     font-weight: 500;
-    font-size: 20px;
-}
+    font-size: 20px;}
 
 h2 {font-size: 14px;}
 
-.div {column-gap: 30px;}
-
 .parametr {
     text-transform: uppercase;
-    font-size: 14px;
-}
-
+    font-size: 14px;}
 
 .produkt {color: #959595;}
-
-
 
 /*celek*/
 .zbozi {
     display: inline-flex;
     height: 440px;
     width: 670px;
-    margin: auto;
     border: 3px solid yellow;
-}
+margin-left: 25vw;}
 
 /*levá část*/
 .vizual {
@@ -62,28 +54,31 @@ h2 {font-size: 14px;}
     flex-direction: column;
     border: 2px dashed purple;
     flex-basis: 50%;
- 
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    background-image: linear-gradient(to bottom right, #06d7c1, #50cc49);
-}
+    background-image: linear-gradient(to bottom right, #06d7c1, #50cc49);}
 
 .logo,
-.slogan {margin: 30px 0 30px 30px;}
+.slogan {margin: 30px 30px 0 30px;}
 
 .slogan {
     font-size: 16px;
     font-weight: 500;
-}
+color: white;}
 
 .cenovka {
     margin-right: 30px;
-    clear: both;
+    margin-top: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    z-index: 2;
+    clear: both;
+    color: white;
+    position: relative;
+    top: -10vh;
+    right: 5vw;
 }
+
 .cena {
     font-size: 28px;
     font-weight: 500;
@@ -94,12 +89,20 @@ h2 {font-size: 14px;}
 }
 
 .bota {
+    margin: 0;
+    padding: 0;
+    border: 2px solid red;
+    border-top-left-radius: 80%;
+    border-bottom-right-radius: 80%;
     position: relative;
-    float: left;
-    left: -100px;
-    padding-top: 0;
-    z-index: 0;
-    }
+    height: auto;
+    width: auto;
+    left: -5vw;
+
+    
+}
+
+
 /*konec - levá část*/
 
 
@@ -112,61 +115,86 @@ h2 {font-size: 14px;}
     background: white;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-   }
+    padding: 30px 0;
+}
 
-.popisky {
+.popisky {border-bottom: 2px solid #06d7c1;}
+
+.popisky, .size, .akce {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    margin: 30px 30px 0 30px;
+    padding: 0 30px 0px 30px;
 }
-.popisky p {
+
+.nazev, .produkt, .parametr {
+    display: flex;
     padding: 0;
-    text-align: justify;
+    margin: 0;}
+
+h1.nazev {
+    margin-bottom: auto;}
+
+h2.parametr {
+    margin-bottom: auto;
+    margin-top: 30px;}
+
+.popis {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;    
+    padding-bottom: 30px;
+    margin: 0;
 }
 
 .size {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    border-top: 2px solid #06d7c1;
-    margin: 30px;
 }
 
 .velikosti {
     display: flex;
-    flex-wrap: wrap;
-    padding-left: 0;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    padding-left: 0; 
 }
 
 li {
-    display: inline-block;
+    display: inline-flex;
     padding: 5px;
-    text-align: center;
-}
+    align-items:flex-start;}
 
 li:hover {
     color: #f15f42;
     border: 1px solid #f15f42;
     border-radius: 50%;
     margin: -1px;
-}
+    padding: 5px;}
 
+.akce {
+    display: flex;
+    align-self: flex-start;
+    justify-content: flex-end;}
+        
 .tlacitko {
-    padding: 5px 10px;
+    display: flex;
     background-color: #f15f42;
     border-radius: 5px;
-    align-self: flex-end;
-    margin-left: 30px;
+    margin-top: 30px;
+    
 }
 
+
+    
 a {
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
     color: white;
-    margin: 0;    
+    padding: 5px 5px;
 }
+
 ul {margin: 0;}
 
 
