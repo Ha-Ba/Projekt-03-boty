@@ -34,7 +34,7 @@ h1 {
 
 h2 {font-size: 14px;}
 
-.div {column-gap: 30px;}
+/*.div {column-gap: 30px;}*/
 
 .parametr {
     text-transform: uppercase;
@@ -45,19 +45,18 @@ h2 {font-size: 14px;}
 
 /*celek*/
 .zbozi {
-    display: flex;
-    flex-direction: row;
+   display: flex;
     flex-basis: 440px;
     width: 670px;
-    margin: 5% 30%;
-    border: 3px solid yellow;
+    margin: 10vh 35vw;
+    /*border: 3px solid yellow;*/
 }
 
 /*levá část*/
 .vizual {
     display: flex;
     flex-direction: column;
-    border: 2px dashed purple;
+    /*border: 2px dashed purple;*/
     width: 50%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -65,23 +64,27 @@ h2 {font-size: 14px;}
     color: white;
 }
 
-.logo {margin: 30px 30px 15px 30px;}
-.slogan {margin: 15px 30px 30px 30px;}
-
 .slogan {
+    display: flex;
     font-size: 16px;
     font-weight: 500;
     color: white;
 }
 
+.logo {
+    display: flex; 
+    margin: 30px 30px 15px 30px;}
+
+.slogan {
+    display: flex;
+    margin: 15px 30px 30px 30px;}
+
 .cenovka {
-    margin-right: 30px;
-    margin-top: 0;
     display: flex;
     flex-direction: column;
+    margin: 0px 30px 30px 30px;
     align-items: flex-end;
     z-index: 2;
-    margin-bottom: 30px
 }
 
 .cena {
@@ -94,15 +97,16 @@ h2 {font-size: 14px;}
 }
 
 .bota {
+    display: flex;
     margin: 0;
     padding: 0;
-    border: 2px solid red;
-   /*border-top-left-radius: 80%;
-    border-bottom-right-radius: 80%;*/
+   /*border: 2px solid red;*/
     position: relative;
     left: -100px;
+    right: 0;
     max-width: 100%;
-    padding-top: 0;
+    overflow-x: visible;
+
 }
 /*konec - levá část*/
 
@@ -111,21 +115,23 @@ h2 {font-size: 14px;}
 .detaily {
     display: flex;
     flex-direction: column;
-    border: 2px dotted green;
+    /*border: 2px dotted green;*/
     width: 50%;  
     background: white;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    /*padding: 30px 0;*/
 }
 
-.popisky {border-bottom: 2px solid #06d7c1;}
+div .popisky {margin-bottom: 0;}
+
+div .size {margin-top: 0;}
 
 .popisky, .size, .akce {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     padding: 0 30px 0px 30px;
+    margin-top: 30px;
 }
 
 .nazev, .produkt, .parametr {
@@ -135,22 +141,29 @@ h2 {font-size: 14px;}
     margin-bottom: 0;
 }
 
+.parametr {margin-top: 30px;}
+.popis {
+    margin: 30px 0;
+}
+
 .size {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     border-top: 2px solid #06d7c1;   
+    margin: 0;
 }
 
 .velikosti {
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
-    margin: 0px 30px 30px 30px;
 }
 
 
-.parametr {margin: 30px 0 0 30px;}
+.parametr {
+    margin-top: 30px;
+}
 
 li {
     display: inline-flex;
@@ -167,19 +180,24 @@ li:hover {
 .akce {
     display: flex;
     align-self: flex-start;
-    justify-content: flex-end;}
+    justify-content: flex-end;
+    margin-bottom: 30px;}
         
 .tlacitko {
+    display: flex;
     padding: 10px 20px;
     background-color: #f15f42;
     border-radius: 5px;
     margin-top: 30px;
-    
 }
 
+ul {
+    display: inline-flex;
 
+}
     
 a {
+    display: flex;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
