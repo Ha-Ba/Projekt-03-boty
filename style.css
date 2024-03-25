@@ -35,24 +35,21 @@ h1 {
 
 h2 {font-size: 14px;}
 
-.div {column-gap: 30px;}
+/*.div {column-gap: 30px;}*/
 
 .parametr {
     text-transform: uppercase;
     font-size: 14px;
 }
 
-
 .produkt {color: #959595;}
-
-
 
 /*celek*/
 .zbozi {
-    display: inline-flex;
-    height: 440px;
+    display: flex;
+    flex-basis: 440px;
     width: 670px;
-    margin: auto;
+    margin: 5% 30%;
     border: 3px solid yellow;
 }
 
@@ -61,15 +58,15 @@ h2 {font-size: 14px;}
     display: flex;
     flex-direction: column;
     border: 2px dashed purple;
-    flex-basis: 50%;
- 
+    width: 50%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     background-image: linear-gradient(to bottom right, #06d7c1, #50cc49);
+    color: white;
 }
 
-.logo,
-.slogan {margin: 30px 0 30px 30px;}
+.logo {margin: 30px 30px 15px 30px;}
+.slogan {margin: 15px 30px 30px 30px;}
 
 .slogan {
     font-size: 16px;
@@ -83,6 +80,7 @@ h2 {font-size: 14px;}
     flex-direction: column;
     align-items: flex-end;
     z-index: 2;
+    margin-bottom: 30px
 }
 .cena {
     font-size: 28px;
@@ -95,11 +93,10 @@ h2 {font-size: 14px;}
 
 .bota {
     position: relative;
-    float: left;
     left: -100px;
+    max-width: 100%;
     padding-top: 0;
-    z-index: 0;
-    }
+}
 /*konec - levá část*/
 
 
@@ -108,7 +105,7 @@ h2 {font-size: 14px;}
     display: flex;
     flex-direction: column;
     border: 2px dotted green;
-    flex-basis: 50%;  
+    width: 50%;  
     background: white;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -123,21 +120,25 @@ h2 {font-size: 14px;}
 .popisky p {
     padding: 0;
     text-align: justify;
+    margin-bottom: 0;
 }
 
 .size {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    border-top: 2px solid #06d7c1;
-    margin: 30px;
+    border-top: 2px solid #06d7c1;   
 }
 
 .velikosti {
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
+    margin: 0px 30px 30px 30px;
 }
+
+
+.parametr {margin: 30px 0 0 30px;}
 
 li {
     display: inline-block;
@@ -153,7 +154,7 @@ li:hover {
 }
 
 .tlacitko {
-    padding: 5px 10px;
+    padding: 10px 20px;
     background-color: #f15f42;
     border-radius: 5px;
     align-self: flex-end;
